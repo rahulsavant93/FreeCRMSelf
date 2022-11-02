@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-02T19:50:23 IST" name="Default suite" finished-at="2022-11-02T19:51:00 IST" duration-ms="37310">
+  <suite started-at="2022-11-02T21:01:16 IST" name="Default suite" finished-at="2022-11-02T21:01:28 IST" duration-ms="12046">
     <groups>
     </groups>
-    <test started-at="2022-11-02T19:50:23 IST" name="Default test" finished-at="2022-11-02T19:51:00 IST" duration-ms="37310">
-      <class name="com.qa.freecrm.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.freecrm.testcases.HomePageTest@6392827e]" started-at="2022-11-02T19:50:23 IST" name="setUp" finished-at="2022-11-02T19:50:44 IST" duration-ms="21214" status="PASS">
+    <test started-at="2022-11-02T21:01:16 IST" name="Default test" finished-at="2022-11-02T21:01:28 IST" duration-ms="12046">
+      <class name="com.qa.freecrm.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.freecrm.testcases.LoginPageTest@1151e434]" started-at="2022-11-02T21:01:16 IST" name="setUp" finished-at="2022-11-02T21:01:27 IST" duration-ms="11231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.qa.freecrm.testcases.HomePageTest@6392827e]" started-at="2022-11-02T19:50:44 IST" name="verifyHomePageTitleTest" finished-at="2022-11-02T19:50:44 IST" duration-ms="27" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.freecrm.testcases.LoginPageTest@1151e434]" started-at="2022-11-02T21:01:27 IST" name="loginTest" finished-at="2022-11-02T21:01:27 IST" duration-ms="552" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.freecrm.testcases.HomePageTest@6392827e]" started-at="2022-11-02T19:50:44 IST" name="tearDown" finished-at="2022-11-02T19:50:45 IST" duration-ms="1083" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="loginPageScreenshot()[pri:0, instance:com.qa.freecrm.testcases.LoginPageTest@1151e434]" started-at="2022-11-02T21:01:27 IST" name="loginPageScreenshot" finished-at="2022-11-02T21:01:28 IST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.freecrm.testcases.HomePageTest@6392827e]" started-at="2022-11-02T19:50:45 IST" name="setUp" finished-at="2022-11-02T19:50:56 IST" duration-ms="10868" status="PASS">
+        </test-method> <!-- loginPageScreenshot -->
+        <test-method is-config="true" signature="logoutTest()[pri:0, instance:com.qa.freecrm.testcases.LoginPageTest@1151e434]" started-at="2022-11-02T21:01:28 IST" name="logoutTest" finished-at="2022-11-02T21:01:29 IST" duration-ms="1755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addContactsLandingPageTest()[pri:2, instance:com.qa.freecrm.testcases.HomePageTest@6392827e]" started-at="2022-11-02T19:50:56 IST" name="addContactsLandingPageTest" finished-at="2022-11-02T19:50:59 IST" duration-ms="3042" status="PASS">
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.freecrm.testcases.LoginPageTest@1151e434]" started-at="2022-11-02T21:01:29 IST" name="teardown" finished-at="2022-11-02T21:01:30 IST" duration-ms="928" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addContactsLandingPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.freecrm.testcases.HomePageTest@6392827e]" started-at="2022-11-02T19:50:59 IST" name="tearDown" finished-at="2022-11-02T19:51:00 IST" duration-ms="986" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.freecrm.testcases.HomePageTest -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.freecrm.testcases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
