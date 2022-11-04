@@ -42,7 +42,7 @@ public class BaseClass {
 			//Testing on AWS - added line 43 & 44
 			options.addArguments("--no-sandbox");
                         options.addArguments("--disable-dev-shm-usage");
-			options.addArguments("--headless")
+			options.addArguments("--headless");
 			//options.addArguments("start-maximized");
 			//options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			//options.setExperimentalOption("useAutomationExtension", false);
