@@ -42,8 +42,10 @@ public class BaseClass {
 			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			//Testing on AWS
-			options.addArguments("headless");
-			options.addArguments("disable-gpu");
+			//options.addArguments("headless");
+			//options.addArguments("disable-gpu");
+			
+			options.addArguments("--headless", "--disable-gpu", "--window-size=800,600","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
 			driver = new ChromeDriver(options);
                         //options.addArguments("--disable-dev-shm-usage");
 			//WebDriverManager.chromedriver().setup();
