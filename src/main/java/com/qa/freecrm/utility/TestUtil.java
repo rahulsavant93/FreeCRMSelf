@@ -31,7 +31,7 @@ public class TestUtil extends BaseClass{
 		File screenshotFile	=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	//	FileUtils.copyFile(screenshotFile, new File("C:\\Users\\rahul\\eclipse-workspace\\FreeCRMSelf\\screenshots\\" + file +".png"));
 
-		FileUtils.copyFile(screenshotFile, new File("/home/ec2-user" + file +".png"));
+		FileUtils.copyFile(screenshotFile, new File("/home/ec2-user/FreeCRMSelf/screenshots" + file +".png"));
 
 	}
 
