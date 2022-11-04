@@ -42,8 +42,8 @@ public class BaseClass {
 			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			//Testing on AWS
-			options.addArguments("no-sandbox");
-			options.addArguments("disable-dev-shm-usage");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("headless");
 			options.addArguments("disable-gpu");
 			
