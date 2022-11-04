@@ -38,21 +38,15 @@ public class BaseClass {
 
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			ChromeOptions options = new ChromeOptions();
-			//Testing on AWS - added line 43 & 44
-			options.addArguments("--no-sandbox");
-                        options.addArguments("--disable-dev-shm-usage");
-			options.addArguments("--headless");
-			//options.addArguments("start-maximized");
-			//options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-			//options.setExperimentalOption("useAutomationExtension", false);
-			
-
-			//WebDriverManager.chromedriver().setup();
 			
 			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			ChromeOptions options = new ChromeOptions();
+			//Testing on AWS
+			options.addArguments("headless");
+			options.addArguments("disable-gpu");
 			driver = new ChromeDriver(options);
-			
+                        //options.addArguments("--disable-dev-shm-usage");
+			//WebDriverManager.chromedriver().setup();
 
 		}
 
