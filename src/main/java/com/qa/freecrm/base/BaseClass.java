@@ -45,7 +45,7 @@ public class BaseClass {
 			//options.addArguments("headless");
 			//options.addArguments("disable-gpu");
 			
-			options.addArguments("--headless", "disable-gpu", "window-size=800,600","ignore-certificate-errors","disable-extensions","no-sandbox","disable-dev-shm-usage");
+			options.addArguments("headless", "disable-gpu","no-sandbox","disable-dev-shm-usage");
 			driver = new ChromeDriver(options);
                         //options.addArguments("--disable-dev-shm-usage");
 			//WebDriverManager.chromedriver().setup();
