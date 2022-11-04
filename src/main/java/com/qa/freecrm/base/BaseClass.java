@@ -48,9 +48,11 @@ public class BaseClass {
 			//options.setExperimentalOption("useAutomationExtension", false);
 			
 
-			WebDriverManager.chromedriver().setup();
-			//System.setProperty("webdriver.chrome.driver","C:/Eclipse/chromedriver_win32/chromedriver.exe");
+			//WebDriverManager.chromedriver().setup();
+			
+			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			driver = new ChromeDriver(options);
+			
 
 		}
 
