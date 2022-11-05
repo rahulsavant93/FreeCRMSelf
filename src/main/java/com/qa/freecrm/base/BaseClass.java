@@ -39,13 +39,20 @@ public class BaseClass {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			
 			ChromeOptions options = new ChromeOptions();
+			options.setHeadless(true);
+			
+			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			driver = new ChromeDriver(options);
+			
 			//Testing on AWS
-			options.addArguments("--no-sandbox");
+		/*	options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("headless");
-			options.addArguments("disable-gpu");
+			options.addArguments("disable-gpu");   */
+			
+			
 			
 			driver = new ChromeDriver(options);                   
 			//WebDriverManager.chromedriver().setup();
