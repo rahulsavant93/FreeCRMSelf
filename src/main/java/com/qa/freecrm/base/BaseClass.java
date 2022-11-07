@@ -43,6 +43,7 @@ public class BaseClass {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 			options.addArguments("disable-gpu");
+
 			driver = new ChromeDriver(options);
 
 		}
