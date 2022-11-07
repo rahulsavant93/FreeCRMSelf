@@ -61,8 +61,8 @@ public class BaseClass {
 		}
 
 
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		//driver.manage().window().maximize();
+		//driver.manage().deleteAllCookies();
 		driver.get(prop.getProperty("url"));;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 

@@ -46,10 +46,10 @@ public class LoginPageTest extends BaseClass{
 		homePage.logout(); 
 	}
 
-	@AfterSuite 
+	/*@AfterSuite
 	public void teardown() {
 		driver.quit();
-	}
+	}*/
 
 
 

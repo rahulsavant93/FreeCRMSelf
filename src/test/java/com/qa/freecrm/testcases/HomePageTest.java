@@ -47,10 +47,10 @@ public class HomePageTest extends BaseClass{
 		homePage.addContactsLandingPage();
 	}
 
-
-	
 	  @AfterMethod 
-	  public void tearDown(){ driver.quit(); }
+	  public void tearDown(){
+		homePage.logout();
+	  }
 	 
 
 }
