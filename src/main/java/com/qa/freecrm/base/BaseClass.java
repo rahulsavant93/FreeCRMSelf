@@ -41,8 +41,8 @@ public class BaseClass {
 		if (browserName.equals("chrome")) {
 			
 			ChromeOptions options = new ChromeOptions();
-			/*options.addArguments("headless");
-			options.addArguments("disable-gpu");*/
+			options.addArguments("headless");
+			options.addArguments("disable-gpu");
 
 			driver = new ChromeDriver(options);
 
