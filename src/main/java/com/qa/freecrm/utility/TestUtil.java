@@ -1,16 +1,14 @@
 package com.qa.freecrm.utility;
 
-import java.io.File;
-import java.io.IOException;
-import java.time.Duration;
-
+import com.qa.freecrm.base.BaseClass;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver.Timeouts;
 
-
-import com.qa.freecrm.base.BaseClass;
+import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
 
 public class TestUtil extends BaseClass{
 
@@ -29,7 +27,7 @@ public class TestUtil extends BaseClass{
 
 
 		File screenshotFile	=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File("C:\\Users\\rahul\\eclipse-workspace\\FreeCRMSelf\\screenshots\\" + file +".png"));
+		FileUtils.copyFile(screenshotFile, new File("C:\\Users\\vinay\\Downloads\\FreeCRMSelf\\screenshots\\" + file +".png"));
 
 	}
 

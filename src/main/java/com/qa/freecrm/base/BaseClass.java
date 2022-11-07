@@ -10,9 +10,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	public static Properties prop = new Properties();
@@ -39,25 +40,21 @@ public class BaseClass {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			ChromeOptions options = new ChromeOptions();
-			//Testing on AWS
 			options.addArguments("headless");
 			options.addArguments("disable-gpu");
 			driver = new ChromeDriver(options);
-                        //options.addArguments("--disable-dev-shm-usage");
-			//WebDriverManager.chromedriver().setup();
 
 		}
 
 		else if(browserName.equals("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options2 = new FirefoxOptions();
 			//System.setProperty("webdriver.gecko.driver", "");
 			driver = new FirefoxDriver();
 		}
 
 		else if(browserName.equals("Edge")) {
-			WebDriverManager.edgedriver().setup();
+			EdgeOptions options3 = new EdgeOptions();
 			//System.setProperty("webdriver.edge.driver", "");
 			driver = new EdgeDriver();
 		}
