@@ -26,11 +26,13 @@ public class LoginPageTest extends BaseClass{
 		initialization();
 		loginPage = new LoginPage();
 		util = new TestUtil();
+		util.webWelementWait();
 	}
 
 	@Test
 	public void loginTest(){
-		homePage = loginPage.login(prop.getProperty("userName"), prop.getProperty("passWord"));
+				homePage = loginPage.login(prop.getProperty("userName"), prop.getProperty("passWord"));
+		util.webWelementWait();
 	}
 
 	@AfterMethod

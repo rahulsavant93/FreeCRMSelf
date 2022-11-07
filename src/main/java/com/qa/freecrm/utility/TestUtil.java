@@ -15,7 +15,7 @@ public class TestUtil extends BaseClass{
 	public Timeouts webWelementWait() {
 
 
-		Timeouts time =	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		Timeouts time =	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		return time;
 

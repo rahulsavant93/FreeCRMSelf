@@ -31,18 +31,19 @@ public class HomePageTest extends BaseClass{
 		homePage = new HomePage();
 		testUtil = new TestUtil();
 		loginPage.login(prop.getProperty("userName"), prop.getProperty("passWord"));
-
+		testUtil.webWelementWait();
 	}
 
 	@Test (priority =1)
 	public void verifyHomePageTitleTest() {
 		String homePageTitle = homePage.getHomePageTitle();
+		testUtil.webWelementWait();
 		Assert.assertEquals(homePageTitle, "Cogmento CRM");
 	}
 
 	@Test (priority =2)
 	public void addContactsLandingPageTest(){
-
+		testUtil.webWelementWait();
 		homePage.addContactsLandingPage();
 	}
 
