@@ -38,7 +38,7 @@ public class HomePageTest extends BaseClass{
 		String homePageTitle = homePage.getHomePageTitle();
 
 		Assert.assertEquals(homePageTitle, "Cogmento CRM");
-		System.out.println("Testing GIT WebHooks");
+		System.out.println("Testing GIT WebHooks - 2");
 	}
 
 /*	@Test
