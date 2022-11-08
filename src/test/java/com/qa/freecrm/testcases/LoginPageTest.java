@@ -32,19 +32,19 @@ public class LoginPageTest extends BaseClass{
 	@Test
 	public void loginTest(){
 				homePage = loginPage.login(prop.getProperty("userName"), prop.getProperty("passWord"));
-		util.webWelementWait();
+
 	}
 
-	@AfterMethod
+	/*@AfterMethod
 	public void loginPageScreenshot() throws IOException {
 		util.takeScreenshot("loginPage");
-	}
+	}*/
 
 
-	@AfterSuite 
+/*	@AfterSuite
 	public void logoutTest() {
 		homePage.logout(); 
-	}
+	}*/
 
 	/*@AfterSuite
 	public void teardown() {
