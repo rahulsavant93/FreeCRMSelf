@@ -44,7 +44,7 @@ public class BaseClass {
 			options.addArguments("headless");
 			options.addArguments("disable-gpu");
 
-			driver = new ChromeDriver(options);
+			 driver = new ChromeDriver(options);
 
 		}
 

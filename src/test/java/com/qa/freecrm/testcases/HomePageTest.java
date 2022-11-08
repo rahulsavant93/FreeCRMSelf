@@ -33,7 +33,7 @@ public class HomePageTest extends BaseClass{
 		loginPage.login(prop.getProperty("userName"), prop.getProperty("passWord"));
 			}
 
-	@Test (priority =1)
+	@Test
 	public void verifyHomePageTitleTest() {
 		String homePageTitle = homePage.getHomePageTitle();
 
