@@ -40,18 +40,16 @@ public class HomePageTest extends BaseClass{
 		Assert.assertEquals(homePageTitle, "Cogmento CRM");
 	}
 
-/*
-	@Test (priority =2)
+	@Test
 	public void addContactsLandingPageTest(){
 
 		homePage.addContactsLandingPage();
 	}
-*/
 
-	 /* @AfterMethod
+	  @AfterMethod
 	  public void tearDown(){
 		homePage.logout();
-	  }*/
+	  }
 	 
 
 }
