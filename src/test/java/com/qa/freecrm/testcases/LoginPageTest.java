@@ -27,27 +27,27 @@ public class LoginPageTest extends BaseClass{
 		util.webWelementWait();
 	}
 
-	@Test
+	@Ignore
 	public void loginTest(){
 				homePage = loginPage.login(prop.getProperty("userName"), prop.getProperty("passWord"));
 
 	}
 
-	@AfterMethod
+/*	@AfterMethod
 	public void loginPageScreenshot() throws IOException {
 		util.takeScreenshot("loginPage");
 	}
 
 
-	@AfterSuite
+	@AfterMethod
 	public void logoutTest() {
 		homePage.logout(); 
 	}
 
-	@AfterSuite
+	@AfterMethod
 	public void teardown() {
 		driver.quit();
-	}
+	}*/
 
 
 
