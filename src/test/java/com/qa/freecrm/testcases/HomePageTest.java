@@ -1,5 +1,9 @@
 package com.qa.freecrm.testcases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -23,6 +27,7 @@ public class HomePageTest extends BaseClass{
 		super();
 	}
 
+	
 	@BeforeMethod
 	public void setUp(){
 
@@ -31,13 +36,13 @@ public class HomePageTest extends BaseClass{
 		homePage = new HomePage();
 		testUtil = new TestUtil();
 		loginPage.login(prop.getProperty("userName"), prop.getProperty("passWord"));
-
+ System.out.println("test pass");
 	}
 
 	@Test (priority =1)
 	public void verifyHomePageTitleTest() {
 		String homePageTitle = homePage.getHomePageTitle();
-		Assert.assertEquals(homePageTitle, "Cogmento CRM");
+		AssertJUnit.assertEquals(homePageTitle, "Cogmento CRM");
 	}
 
 	@Test (priority =2)
@@ -48,7 +53,8 @@ public class HomePageTest extends BaseClass{
 
 
 	
-	  @AfterMethod 
+	
+	@AfterMethod 
 	  public void tearDown(){ driver.quit(); }
 	 
 

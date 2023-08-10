@@ -39,11 +39,9 @@ public class BaseClass {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("start-maximized");
-			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-			options.setExperimentalOption("useAutomationExtension", false);
+			options.addArguments("headless");
 			
-
+			
 			WebDriverManager.chromedriver().setup();
 			//System.setProperty("webdriver.chrome.driver","C:/Eclipse/chromedriver_win32/chromedriver.exe");
 			driver = new ChromeDriver();
@@ -67,6 +65,8 @@ public class BaseClass {
 		driver.manage().deleteAllCookies();
 		driver.get(prop.getProperty("url"));;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
+	
 
 	}
 

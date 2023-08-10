@@ -1,4 +1,6 @@
 package com.qa.freecrm.testcases;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;
@@ -21,14 +23,14 @@ public class LoginPageTest extends BaseClass{
 	}
 
 	@BeforeMethod
-
+	
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
 		util = new TestUtil();
 	}
 
-	@Test
+	@Test 
 	public void loginTest(){
 		homePage = loginPage.login(prop.getProperty("userName"), prop.getProperty("passWord"));
 	}
